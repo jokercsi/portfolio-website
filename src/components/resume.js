@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { Grid, Cell } from 'react-mdl';
 import Education from './education';
+import profilePic from '../images/profile.jpg';
 import Skills from './skills';
 
 class Resume extends Component{
@@ -10,24 +11,27 @@ class Resume extends Component{
           <Grid>
 
             <Cell col ={4}>
-              <div style = {{textAlign: 'center'}}>
-                <img src="https://i.stack.imgur.com/4uzaF.png" alt="profile" style={{height: '200px'}}></img>
+              <div>
+                <img src = {profilePic} alt="profile-img" className = "profile-img"/>
               </div>
-
-              <h2 style={{paddingTop: '2em'}}>Jibin Kim</h2>
-              <h4 style={{color: 'grey'}}>Programmer</h4>
-              <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}></hr>
-              <p>
-                Hello World!
-              </p>
-              <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}></hr>
-              <h5>Address</h5>
-              <p>hacker way menlo park ca 94025 usa</p>
-              <h5>Phone</h5>
-              <p>(123) 456-7890</p>
-              <h5>Email</h5>
-              <p>jokercsi@gmail.com</p>
-              <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}></hr>
+              <h2 >Jibin Kim</h2>
+              <h4 style={{color: 'grey'}}>IT student, Programmer</h4>
+              <hr style={{borderTop: '3px solid #833fb2'}}></hr>
+              <p>-	Try to stay motivated and be positive thinking."</p>
+              <p>-	Self-starting worker, with a tendency to see what needs to be done before being asked.</p>
+              <p>-	Half year experience in Start-Up project.</p>
+              <p>-	Passionate about the Machine Learning and Data Analysis.</p>
+              <hr style={{borderTop: '3px solid #833fb2'}}></hr>
+              <h5>Ethnicity・Nationality</h5>
+              <p>South Korea</p>
+              <hr style={{borderTop: '3px solid #833fb2'}}></hr>
+              <h5>Language</h5>
+              <p>-	English : Business Level (TOEIC: 860)</p>
+              <p>-	Japanese : Native Level (JLPT: N1)</p>
+              <p>-	Korean : Native Level</p>
+              <hr style={{borderTop: '3px solid #833fb2'}}></hr>
+              <h5>Sex, Gender</h5>
+              <p>Male, Man</p>
 
 
             </Cell>
@@ -39,7 +43,15 @@ class Resume extends Component{
                 endYear={2023}
                 schoolName="Aoyama Gakuinn University"
                 schoolDepartment ="(Department of Integrated Information Technology)"
-                schoolDescription="Aoyama Gakuin University (Japanese: 青山学院大学, Hepburn: Aoyama Gakuin Daigaku, AGU) is a private university in Shibuya, Tokyo, Japan. Originally established in 1874 by missionaries from the Methodist Episcopal Church, it was reconfigured in its current form in 1949 as part of Aoyama Gakuin. Aoyama Gakuin University celebrated its 140-year anniversary in 2014 and is one of Japan's oldest higher education facilities."
+                GPA="GPA: 2.6 / 4.0"
+                Extra="Extracurricular Activities: Weight Training, Soccer Club, Volunteer Club"
+              />
+              <Education
+                startYear={2016}
+                endYear={2017}
+                schoolName="Tokyo Korean School"
+                schoolDepartment ="science"
+                Extra="Extracurricular Activities: Soccer Club, Acting Club"
               />
               <hr style={{borderTop: '3px solid #e22947'}} />
               <h2>Skills</h2>

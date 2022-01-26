@@ -6,6 +6,12 @@
 	background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.icon > a{
+	color: white;
+	font-size: 2em;
+	padding: 10px;
+}
+
 .landing-grid{
 	background: #833ab4;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
@@ -53,21 +59,6 @@
 
 .coding {
 	padding : 1em;
-}
-
-.social-links{
-	display: inline-flex;
-	justify-content: space-around;
-	width: 40%;
-	margin: auto;
-	color: white;
-}
-
-.social-links a{
-	color: white;
-	font-size: 5em;
-	padding: 8px;
-	
 }
 
 
@@ -125,7 +116,6 @@
 
 
 
-
 /* resume page */
 
 
@@ -134,4 +124,11 @@
 	color: white;
 	padding: 2em;
 
+}
+
+/* customers page */
+.customers-table{
+	margin: auto;
+	width: 60%;
+	padding-top: 4em;
 }

@@ -9,7 +9,6 @@ class Navbar extends Component {
         var selectorId = document.querySelector('.mdl-layout');
         selectorId.MaterialLayout.toggleDrawer();
     }
-    
     render() {
         return (
             <Drawer title="JibinPortfolio">
@@ -34,12 +33,20 @@ class App extends Component{
             <Header className="header-color" title ={<Link style={{textDecoration: 'none', color: 'white'}} 
             to= "/">JibinPortfolio</Link>} scroll>
                 <Navigation>
-                    <Link to="/landingpage">AboutMe</Link>
-                    <Link to="/resume">Resume</Link>
-                    <Link to="/projects">Projects</Link>
-                    <Link to="/contact">Contact</Link>
-                    <Link to="/customers">Customers</Link>
-
+                    <div className="icon">
+                    { /*github*/ }
+                    <a href ="https://github.com/jokercsi" rel="noopener noreferrer" target = "_blank">
+						<i className="fa fa-github-square" aria-hidden="true"></i>
+					</a>	
+					{ /*facebook*/ }
+                    <a href ="https://www.facebook.com/jibin.kim.7" rel="noopener noreferrer" target = "_blank">
+						<i className ="fa fa-facebook-square" aria-hidden="true"></i>
+					</a>                    
+					{ /*instagram*/ }
+                    <a href ="https://www.instagram.com/jibin_ary/" rel="noopener noreferrer" target = "_blank">
+                        <i className ="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    </div>
                 </Navigation>
             </Header>
             <Navbar>

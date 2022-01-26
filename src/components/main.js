@@ -9,8 +9,8 @@ import Customers from './customers';
 
 const Main = () => (
 	<Switch>
-		<Route exact path="/" component={Landing} />
-		<Route path="/landingpage" component={Landing} />	
+		<Route exact path="/" component={Landing} />	
+		<Route exact path="/landingpage" component={Landing} />	
 		<Route path="/contact" component={Contact} />	
 		<Route path="/resume" component={Resume} />	
 		<Route path="/projects" component={Projects} />	
