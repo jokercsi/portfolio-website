@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 import { Grid, Cell } from 'react-mdl';
 import profilePic from '../images/profileEmoji.png';
 import Typical from 'react-typical';
-
+import { Button } from '@material-ui/core';
+import LoginIcon from '@material-ui/icons/LockOpen';
 
 class Landing extends Component{
     render() {
@@ -10,7 +11,7 @@ class Landing extends Component{
         <div style ={{width: '100%', margin: 'auto'}}>
 		    <Grid className="landing-grid">
 		        <Cell col={12}>
-					<img src = {profilePic} alt="profile-img"/>
+					<img style ={{height: '35%', margin: 'auto'}} src = {profilePic} alt="profile-img"/>
 		        	<div className = "banner-text">
 						<h1>Jibin Kim</h1>
 						<p>I'm{' '}
@@ -18,17 +19,17 @@ class Landing extends Component{
 							loop={Infinity}
 							wrapper="b"
 							steps={[
-								'a Developer💻',2000,
-								'a AGU Student🧑‍🎓',2000,
-								'a Soccer Player',2000,
-								'Iron Man', 2000,
-								'Legend', 2000
+								'a Developer💻',5000,
+								'a AGU Student🧑‍🎓',5000,
+								'a Soccer Player',5000,
+								'a Triplover', 5000,
+								'a Gamer', 5000
 							]}        
 						/>
 		        	    </p>
 						<hr/>
-
-		        		<p className="coding">HTML/CSS | JavaScript | React | MySQL | C/C# | Java | Python | Git</p>
+		        		<p className="coding">I’m a software engineer & student based in Tokyo, Japan</p>
+						<Button startIcon={<LoginIcon />} variant="contained" style ={{marginBottom :'1em'}} >Admin Login / 관리자 로그인 </Button>
 		        	</div>
 		        </Cell>
 		    </Grid>

@@ -1,6 +1,6 @@
 import { StylesContext } from '@material-ui/styles';
 import React, {Component} from 'react';
-import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button,CardMenu, IconButton} from 'react-mdl';
+import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button} from 'react-mdl';
 
 class Projects extends Component{
   constructor(props){
@@ -13,6 +13,37 @@ class Projects extends Component{
 
     if(this.state.activeTab === 0){
       return(
+        <div>
+        <Card shadow={6} style={{minWidth: '450', margin: 'auto'}}>
+        <CardTitle style={{color: '#black', height: '176px', background: 'url(https://github.com/jokercsi/pollavi-mobile/blob/master/%EA%B2%B0%EA%B3%BC%EB%AC%BC/Screenshot_1643171138.png?raw=true) center / cover'}} >Pollavi Project</CardTitle>
+          <CardText>
+            i participate in start up project. my job was front-end Programmer
+          </CardText>
+          <CardActions border>
+            <Button colored>
+            <a href = "https://github.com/jokercsi/pollavi-mobile">Github code</a>
+            </Button>
+          </CardActions>
+        </Card>
+        <br />
+        <Card shadow={6} style={{minWidth: '450', margin: 'auto'}}>
+        <CardTitle style={{color: '#black', height: '176px', background: 'url(https://helpdev.eu/wp-content/uploads/2018/11/react_native.png) center / cover'}} >UCRA Project</CardTitle>
+          <CardText>
+            first cross platform app made by React Native 
+          </CardText>
+          <CardActions border>
+            <Button colored>
+            <a href = "https://github.com/jokercsi/ucra">Github code</a>
+            </Button>
+          </CardActions>
+        </Card>
+      </div>
+
+      )
+    }
+     else if(this.state.activeTab === 1){
+      return(
+        <div>
         <Card shadow={6} style={{minWidth: '450', margin: 'auto'}}>
           <CardTitle style={{color: '#black', height: '176px', background: 'url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png) center / cover'}} >React Project 1</CardTitle>
           <CardText>
@@ -26,46 +57,8 @@ class Projects extends Component{
             <a href = "https://github.com/jokercsi/portfolio-website">Github code</a>
             </Button>
           </CardActions>
-          <CardMenu style={{color: '#black'}}>
-            <IconButton name="share" />
-          </CardMenu>
-
-
-          <CardTitle style={{color: '#black', height: '176px', background: 'url(https://helpdev.eu/wp-content/uploads/2018/11/react_native.png) center / cover'}} >React Native Project 1</CardTitle>
-          <CardText>
-            first cross platform app made by React Native 
-          </CardText>
-          <CardActions border>
-            <Button colored>
-            <a href = "https://github.com/jokercsi/ucra">Github code</a>
-            </Button>
-          </CardActions>
-          <CardMenu style={{color: '#black'}}>
-            <IconButton name="share" />
-          </CardMenu>
-
-
-          <CardTitle style={{color: '#black', height: '176px', background: 'url(https://helpdev.eu/wp-content/uploads/2018/11/react_native.png) center / cover'}} >React Native Project 2</CardTitle>
-          <CardText>
-            i participate in start up project. my job was front-end Programmer
-          </CardText>
-          <CardActions border>
-            <Button colored>
-            <a href = "https://github.com/jokercsi/pollavi-mobile">Github code</a>
-            </Button>
-          </CardActions>
-          <CardMenu style={{color: '#black'}}>
-            <IconButton name="share" />
-          </CardMenu>
-        </Card>
-      )
-    }
-     else if(this.state.activeTab === 1){
-      return(
-        <div>
-          <h3>Programming Blog (in Korean)</h3>
-          <iframe src="https://blog.naver.com/jokercsi1" width="100%" height="700" title="Blog for programming">대체 내용</iframe>
-        </div>  
+        </Card>     
+      </div>
       )   
     }
 
@@ -74,15 +67,14 @@ class Projects extends Component{
 
     render() {
       return (
-        <div className="category-tabs">
+        <div>
           <Tabs activeTab={this.state.activeTeb} onChange={(tabId) => this.setState({activeTab: tabId})} ripple>
+            <Tab>React Native</Tab>
             <Tab>React</Tab>
-            <Tab>Blog</Tab>
-            <Tab></Tab>
           </Tabs>
 
-          <section className="projects-grid">
-            <Grid className="projects-grid">
+          <section>
+            <Grid>
               <Cell col={12}>
                 <div className="content">{this.toggleCategories()}</div>
               </Cell>

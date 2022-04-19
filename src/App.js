@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
-import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl'
+import { Layout, Header, Navigation, Drawer, Content, HeaderRow } from 'react-mdl'
 import Main from "./components/main";
 import {Link} from 'react-router-dom'
 
@@ -11,11 +11,11 @@ class Navbar extends Component {
     }
     render() {
         return (
-            <Drawer title="JibinPortfolio">
+            <Drawer title="Jibin Portfolio">
                 <Navigation>
-                    <Link to={"/landingpage"} onClick={() => this.hideToggle()}>AboutMe</Link>
-                    <Link to={"/resume"} onClick={() => this.hideToggle()}>Resume</Link>
+                    <Link to={"/blog"} onClick={() => this.hideToggle()}>BLOG</Link>
                     <Link to={"/projects"} onClick={() => this.hideToggle()}>Projects</Link>
+                    <Link to={"/resume"} onClick={() => this.hideToggle()}>Resume</Link>
                     <Link to={"/contact"} onClick={() => this.hideToggle()}>Contact</Link>
                     <Link to={"/customers"} onClick={() => this.hideToggle()}>Customers</Link>
                 </Navigation>
@@ -26,12 +26,16 @@ class Navbar extends Component {
    
 
 class App extends Component{
+    
   render() {
     return (
     <div className="demo-big-content">
         <Layout>
-            <Header className="header-color" title ={<Link style={{textDecoration: 'none', color: 'white'}} 
-            to= "/">JibinPortfolio</Link>} scroll>
+            <HeaderRow className="header-color" title ={<Link style={{textDecoration: 'none', color: 'white'}} to= "/">JibinKim</Link>} scroll>
+                <Navigation>
+                    <Link to={"/blog"}>BLOG</Link>
+                    <Link to={"/projects"}>PROJECTS</Link>
+                </Navigation>
                 <Navigation>
                     <div className="icon">
                     { /*github*/ }
@@ -48,7 +52,7 @@ class App extends Component{
                     </a>
                     </div>
                 </Navigation>
-            </Header>
+            </HeaderRow>
             <Navbar>
             </Navbar>
             <Content>

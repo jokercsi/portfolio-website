@@ -9,7 +9,6 @@ class Resume extends Component{
       return (
         <div>
           <Grid>
-
             <Cell col ={4}>
               <div>
                 <img src = {profilePic} alt="profile-img" className = "profile-img"/>
