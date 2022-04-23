@@ -111,7 +111,8 @@
 .contact-grid {
   text-align: center;
   justify-content: center;
-  width: 70%;
+  width: 100%;
+  max-width: 1100px;
   background: white;
   color: black;
   margin-bottom: 20px;
@@ -129,11 +130,6 @@
     #ABCDF3,
     #FFF
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.contact-right-col {
-
-  border-color: red;
 }
 
 

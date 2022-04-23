@@ -61,7 +61,7 @@ class Blog extends Component{
                   <img style ={{width: '100%', height:'100%', objectFit:'cover'}} src = 'https://cdn-icons-png.flaticon.com/512/5038/5038308.png' alt="profile-img"/>
                 </div>
                 <div style ={{width: '90%', height:'5%'}}>
-                  <p>Working on it ....</p>
+                  <p>Working..... on it.....................................</p>
                 </div>
               </div>
             </Typography>
