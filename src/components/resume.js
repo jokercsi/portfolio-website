@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Grid, Cell } from 'react-mdl';
 import Education from './education';
-import profilePic from '../images/profile.jpg';
+import profilePic from '../images/JibinKim.jpg';
 import Skills from './skills';
 
 class Resume extends Component{
@@ -10,8 +10,8 @@ class Resume extends Component{
         <div>
           <Grid>
             <Cell col ={4}>
-              <div>
-                <img src = {profilePic} alt="profile-img" className = "profile-img"/>
+              <div style={{ display:'flex', justifyContent: 'center'}}>
+                <img src = {profilePic} alt="profile-img" className = "resume-profile-img"/>
               </div>
               <h2 >Jibin Kim</h2>
               <h4 style={{color: 'grey'}}>IT student, Programmer</h4>
@@ -29,8 +29,10 @@ class Resume extends Component{
               <p>-	Japanese : Native Level (JLPT: N1)</p>
               <p>-	Korean : Native Level</p>
               <hr style={{borderTop: '3px solid #833fb2'}}></hr>
-              <h5>Sex, Gender</h5>
-              <p>Male, Man</p>
+              <h5>Hobbies</h5>
+              <p>-  Workout (Soccer, Weight Training)</p>
+              <p>-  Trip, International Travel</p>
+              <p>-  Studying English, Finance, Economies, Stock Market</p>
 
 
             </Cell>
@@ -48,7 +50,13 @@ class Resume extends Component{
               <Education
                 startYear={2016}
                 endYear={2017}
-                schoolName="Tokyo Korean School"
+                schoolName="Tokyo Korean School (in Japan)"
+                schoolDepartment ="science"
+              />
+              <Education
+                startYear={2014}
+                endYear={2016}
+                schoolName="Dongtang High School (in Korea)"
                 schoolDepartment ="science"
                 Extra="Extracurricular Activities: Soccer Club, Acting Club"
               />

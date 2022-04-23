@@ -58,10 +58,10 @@ class Blog extends Component{
             <Typography component="div">
               <div style ={{ height: "100vh", maxHeight:"500px"}}>
                 <div style ={{width: '90%', height:'80%', margin: 'auto'}}>
-                  <img style ={{width: '100%', height:'100%', objectFit:'cover'}} src = {profilePic} alt="profile-img"/>
+                  <img style ={{width: '100%', height:'100%', objectFit:'cover'}} src = 'https://cdn-icons-png.flaticon.com/512/5038/5038308.png' alt="profile-img"/>
                 </div>
                 <div style ={{width: '90%', height:'5%'}}>
-                  <p>블로그 글</p>
+                  <p>Working on it ....</p>
                 </div>
               </div>
             </Typography>

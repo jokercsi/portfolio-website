@@ -51,10 +51,10 @@ class Projects extends Component{
           </CardText>
           <CardActions border>
             <Button colored>
-            <a href = "https://jokercsi.github.io/">Portfolio site</a>
+            <a href = "https://jokercsi.github.io/portfolio-website">Portfolio site</a>
             </Button>
-            <Button colored>
-            <a href = "https://github.com/jokercsi/portfolio-website">Github code</a>
+            <Button colored onClick={() => window.open('https://github.com/jokercsi/portfolio-website', '_blank')}>
+              Github code
             </Button>
           </CardActions>
         </Card>     
