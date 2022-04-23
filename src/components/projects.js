@@ -20,8 +20,8 @@ class Projects extends Component{
             i participate in start up project. my job was front-end Programmer
           </CardText>
           <CardActions border>
-            <Button colored>
-            <a href = "https://github.com/jokercsi/pollavi-mobile">Github code</a>
+            <Button colored onClick={() => window.open('https://github.com/jokercsi/pollavi-mobile', '_blank')}>
+              Github code
             </Button>
           </CardActions>
         </Card>
@@ -32,8 +32,8 @@ class Projects extends Component{
             first cross platform app made by React Native 
           </CardText>
           <CardActions border>
-            <Button colored>
-            <a href = "https://github.com/jokercsi/ucra">Github code</a>
+            <Button colored onClick={() => window.open('https://github.com/jokercsi/ucra', '_blank')}>
+              Github code
             </Button>
           </CardActions>
         </Card>

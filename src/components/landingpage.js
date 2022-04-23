@@ -4,6 +4,8 @@ import profilePic from '../images/profileEmoji.png';
 import Typical from 'react-typical';
 import { Button } from '@material-ui/core';
 import LoginIcon from '@material-ui/icons/LockOpen';
+import {Link} from 'react-router-dom'
+
 
 class Landing extends Component{
     render() {
@@ -11,7 +13,7 @@ class Landing extends Component{
         <div style ={{width: '100%', margin: 'auto'}}>
 		    <Grid className="landing-grid">
 		        <Cell col={12}>
-					<img style ={{height: '35%', margin: 'auto'}} src = {profilePic} alt="profile-img"/>
+					<img className = 'profile-img' src = {profilePic} alt="profile-img"/>
 		        	<div className = "banner-text">
 						<h1>Jibin Kim</h1>
 						<p>I'm{' '}
@@ -29,7 +31,10 @@ class Landing extends Component{
 		        	    </p>
 						<hr/>
 		        		<p className="coding">I’m a software engineer & student based in Tokyo, Japan</p>
-						<Button startIcon={<LoginIcon />} variant="contained" style ={{marginBottom :'1em'}} >Admin Login / 관리자 로그인 </Button>
+						<Link to="/login">
+							<Button startIcon={<LoginIcon />} variant="contained" style ={{marginBottom :'1em'}} >Admin Login / 관리자 로그인 </Button>
+      					</Link>
+						
 		        	</div>
 		        </Cell>
 		    </Grid>
