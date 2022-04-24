@@ -12,8 +12,7 @@ import Blog from './blog';
 
 const Main = () => (
 	<Switch>
-		<Route path="/portfolio-website" component={Landing} />	
-		<Route exact path="/" component={Landing} />	
+		<Route exact path="/portfolio-website" component={Landing} />	
 		<Route path="/login" component={Login} />
 		<Route path="/blog" component={Blog} />	
 		<Route path="/projects" component={Projects} />	

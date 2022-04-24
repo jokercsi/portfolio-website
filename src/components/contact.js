@@ -43,7 +43,7 @@ class Contact extends Component{
                   </ListItemButton>
                 </ListItem>
                 <ListItem>
-                  <ListItemButton onClick={() => window.open('https://github.com/jokercsi/pollavi-mobile', '_blank')}>
+                  <ListItemButton onClick={() => window.open('https://github.com/jokercsi', '_blank')}>
                     <ListItemIcon>
                       <GitHubIcon/>
                     </ListItemIcon>
@@ -51,7 +51,7 @@ class Contact extends Component{
                   </ListItemButton>
                 </ListItem>
                 <ListItem>
-                  <ListItemButton onClick={() => window.open('https://github.com/jokercsi/pollavi-mobile', '_blank')}>
+                  <ListItemButton onClick={() => window.open('https://blog.naver.com/jokercsi1', '_blank')}>
                     <ListItemIcon>
                       <BookIcon/>
                     </ListItemIcon>
