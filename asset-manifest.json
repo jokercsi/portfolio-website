@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/portfolio-website/static/css/main.3333fab4.chunk.css",
-    "main.js": "/portfolio-website/static/js/main.5769290d.chunk.js",
-    "main.js.map": "/portfolio-website/static/js/main.5769290d.chunk.js.map",
-    "runtime-main.js": "/portfolio-website/static/js/runtime-main.b5bf659a.js",
-    "runtime-main.js.map": "/portfolio-website/static/js/runtime-main.b5bf659a.js.map",
-    "static/css/2.e4346227.chunk.css": "/portfolio-website/static/css/2.e4346227.chunk.css",
-    "static/js/2.eb2c7fe3.chunk.js": "/portfolio-website/static/js/2.eb2c7fe3.chunk.js",
-    "static/js/2.eb2c7fe3.chunk.js.map": "/portfolio-website/static/js/2.eb2c7fe3.chunk.js.map",
-    "index.html": "/portfolio-website/index.html",
-    "precache-manifest.80adbf5ef91c55b5e8f5c627a25c4b6a.js": "/portfolio-website/precache-manifest.80adbf5ef91c55b5e8f5c627a25c4b6a.js",
-    "service-worker.js": "/portfolio-website/service-worker.js",
-    "static/css/2.e4346227.chunk.css.map": "/portfolio-website/static/css/2.e4346227.chunk.css.map",
-    "static/css/main.3333fab4.chunk.css.map": "/portfolio-website/static/css/main.3333fab4.chunk.css.map",
-    "static/js/2.eb2c7fe3.chunk.js.LICENSE.txt": "/portfolio-website/static/js/2.eb2c7fe3.chunk.js.LICENSE.txt",
-    "static/media/JibinKim.jpg": "/portfolio-website/static/media/JibinKim.c4ccde00.jpg",
-    "static/media/contactPic.jpg": "/portfolio-website/static/media/contactPic.1c0fc1a2.jpg",
-    "static/media/profile.jpg": "/portfolio-website/static/media/profile.f287a42a.jpg",
-    "static/media/profileEmoji.png": "/portfolio-website/static/media/profileEmoji.9797e39e.png"
+    "main.css": "/static/css/main.3333fab4.chunk.css",
+    "main.js": "/static/js/main.06d2dabf.chunk.js",
+    "main.js.map": "/static/js/main.06d2dabf.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d7a593f2.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d7a593f2.js.map",
+    "static/css/2.e4346227.chunk.css": "/static/css/2.e4346227.chunk.css",
+    "static/js/2.eb2c7fe3.chunk.js": "/static/js/2.eb2c7fe3.chunk.js",
+    "static/js/2.eb2c7fe3.chunk.js.map": "/static/js/2.eb2c7fe3.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.ff6b87e4bbfc0c55c7ae97a90969d49a.js": "/precache-manifest.ff6b87e4bbfc0c55c7ae97a90969d49a.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.e4346227.chunk.css.map": "/static/css/2.e4346227.chunk.css.map",
+    "static/css/main.3333fab4.chunk.css.map": "/static/css/main.3333fab4.chunk.css.map",
+    "static/js/2.eb2c7fe3.chunk.js.LICENSE.txt": "/static/js/2.eb2c7fe3.chunk.js.LICENSE.txt",
+    "static/media/JibinKim.jpg": "/static/media/JibinKim.c4ccde00.jpg",
+    "static/media/contactPic.jpg": "/static/media/contactPic.1c0fc1a2.jpg",
+    "static/media/profile.jpg": "/static/media/profile.f287a42a.jpg",
+    "static/media/profileEmoji.png": "/static/media/profileEmoji.9797e39e.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.b5bf659a.js",
+    "static/js/runtime-main.d7a593f2.js",
     "static/css/2.e4346227.chunk.css",
     "static/js/2.eb2c7fe3.chunk.js",
     "static/css/main.3333fab4.chunk.css",
-    "static/js/main.5769290d.chunk.js"
+    "static/js/main.06d2dabf.chunk.js"
   ]
 }
