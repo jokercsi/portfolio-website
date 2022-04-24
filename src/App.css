@@ -99,26 +99,19 @@
 
 /*contact page*/
 
-/* leftside */
 .contact-body {
-  margin: auto;
-  position: flex;
-  width: 100%;
-  min-height: 100%;
   justify-content: center;
 }
 
 .contact-grid {
   text-align: center;
   justify-content: center;
-  width: 100%;
-  max-width: 1100px;
-  background: white;
+  width: 95%;
+  max-width: 1000px;
   color: black;
-  margin-bottom: 20px;
 }
 
-
+/* leftside */
 .contact-left-col {
   background: #ABCDF3 ; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -136,16 +129,16 @@
 /* 반응형 사진 크기 */
 .contactPic-img {
   width: 100%;
-  max-width: 425px;
+  max-width: 400px;
   height: auto;
 }
 
 .contact-grid h2 {
-  font-family: "Anton", sans-serif;
+  font-family: "Rockwell", sans-serif;
 }
 
 .contact-grid p {
-  font-family: "Oxygen", sans-serif;
+  font-family: "Goudy Old Style";
   font-weight: bold;
 }
 
@@ -155,17 +148,6 @@
   border-top: 5px dotted black;
   width: 50%;
   margin: auto;
-}
-
-.contact-list i {
-  font-size: 50px;
-  padding-right: 1em;
-  float: left;
-}
-
-.contact-list {
-  text-align: left;
-  white-space: pre-line;
 }
 
 /* resume page */

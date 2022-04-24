@@ -1,8 +1,20 @@
 import React, {Component} from 'react';
-import {Grid,Cell,List,ListItem,ListItemContent} from 'react-mdl';
+import {Grid,Cell} from 'react-mdl';
 import contactPic1 from '../images/profile.jpg';
 import contactPic2 from '../images/contactPic.jpg';
-
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemButton from '@mui/material/ListItemButton';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
+import HomeIcon from '@mui/icons-material/Home';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
+import EmailIcon from '@mui/icons-material/Email';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import BookIcon from '@mui/icons-material/Book';
 
 class Contact extends Component{
     render() {
@@ -11,63 +23,89 @@ class Contact extends Component{
           <Grid className = "contact-grid">           
              <Cell className ="contact-left-col" col={6}>
               <img src = {contactPic1} alt="profile-img" className = "contactPic-img"/>
-              <h2>SNS & Other Accounts </h2>
+              <h2>Social Media </h2>
               <hr/>
-
-              <a href ="https://github.com/jokercsi" rel="noopener noreferrer" target = "_blank">
-						    <i className="fa fa-github-square" aria-hidden="true" style={{fontSize:30}}></i>
-					    </a>	
-              <p>github</p>
-
-              <a href ="https://www.facebook.com/jibin.kim.7" rel="noopener noreferrer" target = "_blank">
-                <i className ="fa fa-instagram" aria-hidden="true" style={{fontSize:30}}></i>
-               </a>  
-              <p>instagram</p>
-
-              <a href ="https://www.facebook.com/jibin.kim.7" rel="noopener noreferrer" target = "_blank">
-                <i className ="fa fa-facebook-square" aria-hidden="true" style={{fontSize:30}}></i>
-              </a>  
-              <p>facebook</p>
-
-              <a href ="https://www.facebook.com/jibin.kim.7" rel="noopener noreferrer" target = "_blank">
-                <i class="fa fa-book" aria-hidden="true" style={{fontSize:30}}></i>     
-              </a>
-              <p>Blog</p>
+              <List>
+              <ListItem>
+                  <ListItemButton onClick={() => window.open('https://www.instagram.com/jibin_ary/', '_blank')}>
+                    <ListItemIcon>
+                      <InstagramIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="@jibin_ary" secondary="Instagram"/>
+                  </ListItemButton>
+                </ListItem>
+                <ListItem>
+                  <ListItemButton onClick={() => window.open('https://www.facebook.com/jibin.kim.7/', '_blank')}>
+                    <ListItemIcon>
+                      <FacebookIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="https://www.facebook.com/jibin.kim.7" secondary="Facebook"/>
+                  </ListItemButton>
+                </ListItem>
+                <ListItem>
+                  <ListItemButton onClick={() => window.open('https://github.com/jokercsi/pollavi-mobile', '_blank')}>
+                    <ListItemIcon>
+                      <GitHubIcon/>
+                    </ListItemIcon>
+                    <ListItemText primary="https://github.com/jokercsi" secondary="Github"/>
+                  </ListItemButton>
+                </ListItem>
+                <ListItem>
+                  <ListItemButton onClick={() => window.open('https://github.com/jokercsi/pollavi-mobile', '_blank')}>
+                    <ListItemIcon>
+                      <BookIcon/>
+                    </ListItemIcon>
+                    <ListItemText primary="Blog"  secondary="Naver Blog"/>
+                  </ListItemButton>
+                </ListItem>
+              </List>
             </Cell>
             
             <Cell className ="contact-right-col" col={6}>
               <h2>Contact</h2>
               <hr/>
-              <div className="contact-list">
-                <List style ={{flex:1, justifyContent: 'center', alignItems: 'center'}}>
-                  <ListItem>
-                  <ListItemContent style ={{fontFamily: 'Anton', fontSize:30}}>
-                      <i class="fa fa-mobile" aria-hidden="true" style={{fontSize:30}}></i>
-                      <p>080-1357-2631</p>
-                    </ListItemContent>
-                  </ListItem>
-                  <ListItem>
-                  <ListItemContent style ={{fontFamily: 'Anton', fontSize:30}}>
-                      <i className="fa fa-address-book" aria-hidden="true" style={{fontSize:30}}></i>
-                      <p>Hwaseong-si, Gyeonggi-do, REPUBLIC OF KOREA</p>
-                      <br/>
-                      <p>Sagamihara, Kanagawa, Japan</p>
-                    </ListItemContent>
-                  </ListItem>
-                  <ListItem>
-                    <ListItemContent style ={{fontFamily: 'Anton', fontSize:30}}>
-                      <i className="fa fa-envelope" aria-hidden="true" style={{fontSize:30}}></i>
-                      <p>a5817028@aoyama.jp</p>
-                  </ListItemContent>
-                  </ListItem>
-                  <ListItem>
-                  <ListItemContent style ={{fontFamily: 'Anton', fontSize:30}}>
-                      <i className="fa fa-envelope" aria-hidden="true" style={{fontSize:30}}></i>
-                      <p>jokercsi@gmail.com</p>
-                  </ListItemContent>
-                  </ListItem>
-                </List>
-              </div>
+              <List>
+              <ListItem>
+                  <ListItemButton>
+                    <ListItemIcon>
+                      <LocationOnIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="Machida, Kanagawa" secondary="JAPAN"/>
+                  </ListItemButton>
+                </ListItem>
+                <ListItem>
+                  <ListItemButton>
+                    <ListItemIcon>
+                      <HomeIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="Hwaseong-si, Gyeonggi-do" secondary="REPUBLIC OF KOREA"/>
+                  </ListItemButton>
+                </ListItem>
+                <ListItem>
+                  <ListItemButton>
+                    <ListItemIcon>
+                      <PhoneIphoneIcon/>
+                    </ListItemIcon>
+                    <ListItemText primary="080-1357-2631" secondary="JAPAN"/>
+                  </ListItemButton>
+                </ListItem>
+                <ListItem>
+                  <ListItemButton>
+                    <ListItemIcon>
+                      <EmailIcon/>
+                    </ListItemIcon>
+                    <ListItemText primary="a5817028@aoyama.jp" />
+                  </ListItemButton>
+                </ListItem>
+                <ListItem >
+                <ListItemButton>
+                    <ListItemIcon>
+                      <EmailIcon/>
+                    </ListItemIcon>
+                    <ListItemText primary="jokercsi@gmail.com" />
+                  </ListItemButton>
+                </ListItem>
+              </List>
               <img src = {contactPic2} alt="profile-img" className = "contactPic-img"/>
             </Cell>
           </Grid>
@@ -75,5 +113,6 @@ class Contact extends Component{
       );
     }
   }
+
 
 export default Contact;

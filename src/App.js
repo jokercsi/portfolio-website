@@ -13,11 +13,11 @@ class Navbar extends Component {
         return (
             <Drawer title="Jibin Portfolio">
                 <Navigation>
-                    <Link to={"/blog"} onClick={() => this.hideToggle()}>BLOG</Link>
                     <Link to={"/projects"} onClick={() => this.hideToggle()}>Projects</Link>
-                    <Link to={"/resume"} onClick={() => this.hideToggle()}>Resume</Link>
                     <Link to={"/contact"} onClick={() => this.hideToggle()}>Contact</Link>
-                    <Link to={"/customers"} onClick={() => this.hideToggle()}>Customers</Link>
+                    <Link to={"/resume"} onClick={() => this.hideToggle()}>Resume</Link>
+                    {/* <Link to={"/customers"} onClick={() => this.hideToggle()}>Customers</Link> */}
+                    <Link to={"/blog"} onClick={() => this.hideToggle()}>BLOG</Link>
                 </Navigation>
             </Drawer>
         );
@@ -33,8 +33,10 @@ class App extends Component{
         <Layout>
             <HeaderRow className="header-color" title ={<Link style={{textDecoration: 'none', color: 'white'}} to= "/">JibinKim</Link>} scroll>
                 <Navigation>
-                    <Link to={"/blog"}>BLOG</Link>
                     <Link to={"/projects"}>PROJECTS</Link>
+                    <Link to={"/contact"}>CONTACT</Link>
+                    <Link to={"/resume"}>RESUME</Link>
+                    <Link to={"/blog"}>BLOG</Link>
                 </Navigation>
                 <Navigation>
                     <div className="icon">
