@@ -1,4 +1,4 @@
-# portfolio-website
+# Portfolio Website (Responsive Web Design)
 
 URL of Output
 https://jokercsi.github.io/portfolio-website/
@@ -9,8 +9,8 @@ Development period
 
 > 2021.01. - Present.
 
-My first project of React.
-This is my website portfolio.
+- My first project of React.
+- Responsive web design.
 
 ## Memo
 
