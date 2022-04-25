@@ -15,7 +15,7 @@ class Projects extends Component{
       return(
         <div>
         <Card shadow={6} style={{minWidth: '450', margin: 'auto'}}>
-        <CardTitle style={{color: '#black', height: '176px', background: 'url(https://github.com/jokercsi/pollavi-mobile/blob/master/%EA%B2%B0%EA%B3%BC%EB%AC%BC/Screenshot_1643171138.png?raw=true) center / cover'}} >Pollavi Project</CardTitle>
+        <CardTitle style={{color: '#black', height: '176px', background: 'url(https://raw.githubusercontent.com/jokercsi/pollavi-mobile/master/result/Screenshot_1643170933.png) center / cover'}} >Pollavi Project</CardTitle>
           <CardText>
             i participate in start up project. my job was front-end Programmer
           </CardText>
