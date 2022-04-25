@@ -31,7 +31,7 @@ class Landing extends Component{
 		        	    </p>
 						<hr/>
 		        		<p className="coding">I’m a software engineer & student based in Tokyo, Japan</p>
-						<Link to="/login">
+						<Link to="/portfolio-website/login">
 							<Button startIcon={<LoginIcon />} variant="contained" style ={{marginBottom :'1em'}} >Admin Login / 관리자 로그인 </Button>
       					</Link>
 						
